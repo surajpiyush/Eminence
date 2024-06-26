@@ -14,6 +14,8 @@ app.use('/api/auth/',authRouter)
 app.use('/api/product/',productRouter)
 app.use('/api/order/',orderRouter)
 
-
+app.get('/',()=>{
+    console.log('Hello')
+})
 const port = process.env.PORT || 4000;
 app.listen(port,()=>console.log('Server is runnin on port',port))
