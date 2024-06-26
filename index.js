@@ -3,7 +3,6 @@ const orderRouter = require('./routes/order.route')
 const authRouter = require('./routes/auth.route')
 const productRouter = require('./routes/product.route')
 const path = require('path');
-
 const connectDB = require('./config/db')
 require('dotenv').config()
 connectDB()
